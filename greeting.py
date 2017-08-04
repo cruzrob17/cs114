@@ -1,6 +1,6 @@
-print("what is your name?")
+print("Hello! What is your name?")
 name= str(input())
-print("hello. What is your age?")
+print("What is your age?")
 age= int(input())
 print("hello " + name + " in a year you will be " + str(age +1))
 print("where do you live?")

@@ -1,0 +1,7 @@
+print("type a noun")
+noun_1= str(input())
+print("type an adjective")
+adjective= str(input())
+print(" type another noun")
+noun_2= str(input())
+print(" The " + noun_1 + " jumped over the " + adjective + " " + noun_2)
