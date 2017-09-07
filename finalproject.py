@@ -35,9 +35,19 @@ def SamStart():
         SamFight()
     return SamStart()
 
-
-
 def AlexStart():
+    """this function contains Alex's first choice branch"""
     print("fan")
+    choiceB=''
+    while choiceB  !='bat' and choiceB !='fun':
+        choiceB=str(input("bat or fun"))
+    if choiceB=='bat':
+        print("how high?")
+        AlexBat()
+    elif choiceB=='fun':
+        print("not now")
+        AlexFun()
+    return AlexStart()
+
 
 main()
