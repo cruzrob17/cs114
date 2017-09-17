@@ -150,21 +150,25 @@ def SamHome():
 
 def AlexStart():
     """this function contains Alex's first choice branch"""
-    print("fan")
+    print("You start to shake conpulsively as you try to get yourself to your feet.")
+    print("One of the officers helps you to your feet by lifting your arm and subsequently asks if you could answer a few questions.")
     choiceB=''
     while choiceB  !='Run' and choiceB !='Talk':
-        choiceB=str(input("Run or Talk:"))
+        choiceB=str(input("Your thoughts freeze as you think about the contents of your bag. You have two options (Type Run or Talk):"))
     if choiceB=='Run':
-        print("how high?")
+        print("You choose to run from the cops in hopes of them not finding the gun and ski mask in your bag.")
         AlexRun()
     elif choiceB=='Talk':
-        print("not now")
+        print("You choose to take the chance and talk to the police")
         AlexTalk()
     return AlexTalk()
 
 def AlexRun():
     """this function contains Alex's choice to run"""
-    print("caught")
+    print("Your legs moved faster than your brain and you make a bee line towards the doors.")
+    print("Unfortunately, the cumbersome weight of the bag made it hard to run and the cops easily caught up to you.")
+    print("Being extreamly suspicious of why you ran, the cops search your bag and find the gun and you are taken under arrest.")
+    print("You feel a perfound amount of guilt as you unable to save your friend from inside the walls of a penitentiary.")
     GameEnd()
     return AlexRun()
 
