@@ -174,29 +174,43 @@ def AlexRun():
 
 def AlexTalk():
     """this function contains Alex's choice to talk to the police"""
-    print("Talk")
+    print("You choose to stay calm and talk to the police and answer a few questions.")
+    print("After the interagation, the cops choose to let you go with the option of attending a therapy appointment for patients with ptsd.")
+    print("You say you'll think about of in actuallity you have no intention of going.")
+    print("At the moment you're too concerned with getting the medicine that your friend Ellie can't afford.")
+    print("You fear time is running out for Ellie so you have to come up for some options.")
+    print("You look into running a fundraiser and with the right marketing, it might be a success.")
+    print("However, you don't know if you'll even have enough time left to even get the medicine so think about steeling it.")
     choiceC=''
     while choiceC !='Fundraiser' and choiceC !='Steal':
-        choiceC=str(input("Fundraiser or Steal:"))
+        choiceC=str(input("Weigh your options and decide whether to raise the money for the medicine or steal it (Type Fundraiser or Steal):"))
     if choiceC=='Fundraiser':
-        print("good person")
+        print("So you think that running a fundraiser will be a safer option.")
+        print("You get hte word out by posting on social media and putting up banners all over town with the help of your family.")
+        print("The fundraiser goes extreamly well and you're able to buy the medicine in order to save Ellie.")
+        print("All is well.")
         GameEnd()
     elif choiceC=='Steal':
-        print("sketchy")
+        print("You feel time is against you so you choose to try and steal the medicine.")
         AlexSteal()
     return AlexTalk()
 
 def AlexSteal():
     """this function contains Alex's choice to steal the cure"""
-    print("Steal")
+    print("Stealing the medicine won't be easy but you see it as the only real option.")
+    print("You stake out the facility where the medicine is being produced and you notice different things about night and day shifts.")
+    print("At night there is higher security but more places where you can't be seen.")
+    print("During the day though, you notice that there is fewer security but less places to hide.")
     choiceD=''
     while choiceD !='Day' and choiceD !='Night':
-        choiceD=str(input("Day or Night:"))
+        choiceD=str(input("Decide to go at night or during the day (Day or Night):"))
     if choiceD=='Day':
-        print("bad choice")
+        print("Unfortunately, you're caught and all hopes for saving Ellie are gone.")
+        print("You've failed")
         GameEnd()
     elif choiceD=='Night':
-        print("good choice")
+        print("Somehow you mange to escape the facility with the meicine and make a mad dash to Ellie.")
+        print("While giving her the medicine, you think to yourself that everything that happenned was worth it now that you saved her.")
         GameEnd()
     return AlexSteal()
 
