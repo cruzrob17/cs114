@@ -4,10 +4,10 @@ def main():
     """this fucntion sets up the story"""
     print("It's a brisk autumn day and a tall slender man named Sam and a scruff looking teenager named Alex enter the First Eagle Bank in Downtown Chicago.")
     print()
-    time.sleep(5)
+    time.sleep(7)
     print("Sam finds himself at the bank in order to take out a loan in order to help pay for his mistress's house as he plans to leave his wife.")
     print()
-    time.sleep(5)
+    time.sleep(7)
     print("Alex finds himself at the bank in order to rob the bank to help pay for his dying friend's hospital treatment.")
     print()
     time.sleep(5)
@@ -36,7 +36,7 @@ def CharacterChoice():
 
 def SamStart():
     """this function contains Sam's first choice branch"""
-    time.sleep(5)
+    time.sleep(6)
     print()
     print("You see the cops beckon you toward them as you hear a constant ringing in your left ear.")
     print("You're visibly shaken by the whole ordeal but you can't stop thinking about the whole reason why you came to the bank in the first place.")
@@ -46,7 +46,6 @@ def SamStart():
     choice2=''
     while choice2 !='Work' and choice2 !='Appointment':
         choice2=str(input("Unfortunatley though, you have a very important day at work ahead of you so you have to make a choice (Type Work or Appointment):"))
-    print()
     if choice2=='Work':
         print("You choose against your better judgement to go to work.")
         SamWork()
@@ -57,10 +56,12 @@ def SamStart():
 
 def SamAppoint():
     """this function contains Sam's choice to go to the appointment"""
+    time.sleep(6)
     print("On your way to the appointment you find that everything you're going through was caused by your shellfishness.")
     print()
     print("You didn't need to put your life at risk if you didn't want to abandon your wife")
     print()
+    time.sleep(6)
     print("You didnt't need to see that kid drop dead next to you and you can't help but feel responsable for everything.")
     print("The thearapist walks you through the many ways you can go about treating your condition and one of those options include talking to the scruff looking teenager's family.")
     print("Your not sure if it's a good idea to meet with the family. You don't know if it will only make your feelings worse.")
@@ -80,12 +81,14 @@ def SamAppoint():
 
 def SamFamily():
     """this function contains Sam's choice to visit Alex's family"""
+    time.sleep(6)
     print("You choose to put on a brave face and go meet the family of the killed boy.")
     print("While with the family, you're overeraught with guilt and and it's unbearable to look at them.")
+    print()
     print("Though you may not be fiancialy stable enough to do so, you consider the thought of maybe paying for the familie's funeral expenses.")
     print("You think that it'll help you be at ease after the traumatic events that had just transpired")
     choice6=''
-    while choice6 != 'Pay' and choice!= 'Home':
+    while choice6 != 'Pay' and choice6!= 'Home':
         choice6=str(input("Now you have to choose whether or not to pay the family's bills(Type Pay or Home):"))
     if choice6=='Pay':
         print("You choose to offer the family some miney in order for them to pay the funeral cost.")
@@ -93,20 +96,24 @@ def SamFamily():
         print("")
         GameEnd()
     elif choice6=='Home':
-        print("You choose to go home and forgo the funeral because you believe that it'll be too hard on you to go")
+        print("You choose to go home and forgo the funeral because you believe that it'll be too hard on you to go.")
         print("You hope to muddle things over with yourslef and drown your worries in drink. A pretty bad idea but it'll do for now.")
         GameEnd()
     return SamFamily()
 
 def SamWork():
     """this function contains Sam's choice to go to work"""
+    time.sleep(6)
     print("You brush off your conflicted emotions in order to impress this major client at work.")
     print()
     print("As you await your important meeting, your leg can't stop shaking and you find yourself out of breath due to your overacctive nervs.")
     print("The meeeting starts and your big payday lies in the hands of a burly middle aged man with a brown mustache.")
     time.sleep(6)
+    print()
     print("While giving the mustached man a well rehearsed pitch on a fantastic new cardboard line that your company can provide, your brain goes on autopilot.")
     print("Just like you never left the bank, you start to hear yelling and the sound peircing bang of a gunshot.")
+    time.sleep(6)
+    print()
     print("Your speech patterns start to blur together and you find yourself on the ground.")
     print("Struggling to get to your feet, you find no better option than to escape your embarrassment by crawling to the door.")
     print("Once outside, you can hear the confused murmers of your co-workers and client and give yourslef two options.")
@@ -120,6 +127,8 @@ def SamWork():
         print("You make a mad dash to the roof through way of the many flights of stairs.")
         print("The door to the roof is slamed open by you and you're greeted by the twinkling of the cityscape.")
         print("You wipe the sweat from your brow and move to the waist high edge of the bulding. ")
+        time.sleep(6)
+        print()
         print("Your heart tells you to jump but your brain tells you to call Lilly, your wife.")
         print("You see the disapointed faces of those you love and the scruff looking teenager flash in your eyes.")
         print("Like most things in your life, you fail to listen to your brain and your heart got the better of you")
@@ -128,9 +137,11 @@ def SamWork():
 
 def SamHome():
     """this function contains Sam's choice to go home"""
+    time.sleep(6)
     print("You choose to go home to be with your family in order to get you through your breakdown.")
     print("You're unfortunately greeted by an enraged Lilly, your wife.")
     print("At the same time though, you could't be happier to see her.")
+    print()
     print("So you sit her down and explain to her everything that's happend these past couple days because you haven't yet.")
     print("While explaining your story to her, see your kids running from their rooms to embrace you.")
     print("You feel you're at a crossroads in your lives and need to make a decisions.")
@@ -150,6 +161,7 @@ def SamHome():
 
 def AlexStart():
     """this function contains Alex's first choice branch"""
+    time.sleep(6)
     print("You start to shake conpulsively as you try to get yourself to your feet.")
     print("One of the officers helps you to your feet by lifting your arm and subsequently asks if you could answer a few questions.")
     choiceB=''
@@ -165,8 +177,10 @@ def AlexStart():
 
 def AlexRun():
     """this function contains Alex's choice to run"""
+    time.sleep(6)
     print("Your legs moved faster than your brain and you make a bee line towards the doors.")
     print("Unfortunately, the cumbersome weight of the bag made it hard to run and the cops easily caught up to you.")
+    print()
     print("Being extreamly suspicious of why you ran, the cops search your bag and find the gun and you are taken under arrest.")
     print("You feel a perfound amount of guilt as you unable to save your friend from inside the walls of a penitentiary.")
     GameEnd()
@@ -174,11 +188,16 @@ def AlexRun():
 
 def AlexTalk():
     """this function contains Alex's choice to talk to the police"""
+    time.sleep(6)
     print("You choose to stay calm and talk to the police and answer a few questions.")
     print("After the interagation, the cops choose to let you go with the option of attending a therapy appointment for patients with ptsd.")
     print("You say you'll think about of in actuallity you have no intention of going.")
+    time.sleep(6)
+    print()
     print("At the moment you're too concerned with getting the medicine that your friend Ellie can't afford.")
     print("You fear time is running out for Ellie so you have to come up for some options.")
+    time.sleep(6)
+    print()
     print("You look into running a fundraiser and with the right marketing, it might be a success.")
     print("However, you don't know if you'll even have enough time left to even get the medicine so think about steeling it.")
     choiceC=''
@@ -186,7 +205,8 @@ def AlexTalk():
         choiceC=str(input("Weigh your options and decide whether to raise the money for the medicine or steal it (Type Fundraiser or Steal):"))
     if choiceC=='Fundraiser':
         print("So you think that running a fundraiser will be a safer option.")
-        print("You get hte word out by posting on social media and putting up banners all over town with the help of your family.")
+        print("You get the word out by posting on social media and putting up banners all over town with the help of your family.")
+        print()
         print("The fundraiser goes extreamly well and you're able to buy the medicine in order to save Ellie.")
         print("All is well.")
         GameEnd()
@@ -197,8 +217,11 @@ def AlexTalk():
 
 def AlexSteal():
     """this function contains Alex's choice to steal the cure"""
+    time.sleep(6)
     print("Stealing the medicine won't be easy but you see it as the only real option.")
     print("You stake out the facility where the medicine is being produced and you notice different things about night and day shifts.")
+    print(6)
+    print()
     print("At night there is higher security but more places where you can't be seen.")
     print("During the day though, you notice that there is fewer security but less places to hide.")
     choiceD=''
@@ -217,6 +240,7 @@ def AlexSteal():
 def GameEnd():
     """this function ends the game"""
     print("game over")
+    print("You've made it to the end of the journey for this chapter in your character's life.")
     sys.exit()
 
 
